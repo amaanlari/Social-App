@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "794376619883",
+    "project_id": "social-app-ea820",
+    "storage_bucket": "social-app-ea820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794376619883:android:2cbb7a88924e5a18a8ae2e",
+        "android_client_info": {
+          "package_name": "com.lari.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794376619883-mnbig5oa8nopfq74515us07203qd07cs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lari.socialapp",
+            "certificate_hash": "99e5127ec3bc204678760ea7248fe34bd3f46e51"
+          }
+        },
+        {
+          "client_id": "794376619883-enf3gm7gujp93fhs750m1fmcpqpdlrnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWkUIS3U5livSix420wbBTADaBw_NEOz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794376619883-enf3gm7gujp93fhs750m1fmcpqpdlrnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
