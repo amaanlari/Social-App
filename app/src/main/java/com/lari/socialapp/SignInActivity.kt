@@ -16,7 +16,9 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.lari.socialapp.daos.UserDao
 import com.lari.socialapp.databinding.ActivitySignInBinding
+import com.lari.socialapp.models.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -120,6 +122,11 @@ class SignInActivity : AppCompatActivity() {
 
     private fun updateUI(firebaseUser: FirebaseUser?) {
         if (firebaseUser != null){
+
+            val user = User(firebaseUser.uid, firebaseUser.displayName, firebaseUser.photoUrl.toString())
+            val usersDao = UserDao()
+            usersDao.addUser(user)
+
             val mainActivityIntent = Intent(this, MainActivity::class.java)
             startActivity(mainActivityIntent)
             finish()

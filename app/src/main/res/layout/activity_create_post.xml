@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePostActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/postInput"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="@string/post_hint"
+        app:expandedHintEnabled="false"
+        app:hintTextAppearance="@style/TextAppearance.Material3.LabelLarge"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postInputTextfield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/post"
+        android:textColor="?attr/colorOnSurfaceInverse"
+        app:backgroundTint="?attr/colorPrimary"
+        app:cornerRadius="10dp"
+        app:elevation="20dp"
+        app:strokeColor="@color/material_on_background_emphasis_medium"
+        app:rippleColor="?attr/colorOnSecondaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
