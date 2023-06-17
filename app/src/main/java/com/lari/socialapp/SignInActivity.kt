@@ -36,8 +36,10 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // [START view_binding_configuration]
         binding = ActivitySignInBinding.inflate(layoutInflater)
         val view = binding.root
+        // [END view_binding_configuration]
         setContentView(view)
 
         // [START config_signin]
@@ -54,8 +56,21 @@ class SignInActivity : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = Firebase.auth
         // [END initialize_auth]
+
+        //[START set_signin_on_click]
+        binding.signInButton.setOnClickListener {
+            signIn()
+        }
     }
 
+    // [START on_start_check_user]
+    override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+    // [END on_start_check_user]
 
     // [START signin]
     private fun signIn() {
