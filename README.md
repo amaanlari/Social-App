@@ -1,6 +1,6 @@
 # Tweetify App
 
-Twitter App is a simple android application that allows users to login with their gmail account and tweet. The tweets are open or visible to all the users. It consists of only a single page i.e. feeds page. The profile page and features such as followers etc will be implemented later on.
+Tweetiy App is a simple android application that allows users to login with their gmail account and tweet. The tweets are open or visible to all the users. It consists of only a single page i.e. feeds page. The profile page and features such as followers etc will be implemented later on.
 
 ## Getting Started
 
